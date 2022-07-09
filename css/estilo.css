@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*HEADER*/
+.a{
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    background-image: url(../imagen/back.jpg);
+
+}
+h2{
+    text-align: center;
+    font-size:xx-large;
+    text-decoration: underline;
+}
+
+
+.logo{
+    height: 150px;
+    margin-top: 25px;
+
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    font-family: 'Alfa Slab One', cursive;
+    text-align: center;
+    color: blanchedalmond;   
+    
+}
+
+.dropdown{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 15px;
+}
+/*HEADER*/
+
+/*index*/
+.carousel-item{
+   margin-top: 10px;
+   margin-bottom: 10px;
+   
+}
+
+/*primerEtapa      (va dentro de origen,  margin-left:180px;    
+    font-size: 50px;)*/
+
+
+/* TIENDA */
+;
+
+.suscripcion{
+   text-align: center;
+    font-size: xx-large;
+    text-decoration: underline;
+    font-family:roboto;
+ }
+ .form-inline{
+    justify-content: center;
+ }
+
+
+
+.card:hover {
+    color: black;
+    box-shadow: 0 0 5px red;
+    text-shadow: 0 0 5px red;}
+
+/*FOOTER*/
+.c{
+    display: flex;
+    background-color: black;
+    color: #f40202;  
+    justify-content: center;
+    text-align:start;
+        
+}
+/* GIRAS */
+
+.table{
+    /* display: flex; */
+    /* justify-content:start; */
+    /* text-align: left; */
+    width: 100%;
+    border-collapse: collapse;
+    width: 18rem;
+    caption-side:top;
+
+    
+   
+}
+
+th, td{
+    border: solid 6px black;
+    padding: 5px;
+}
+
+.reseña{
+    text-align: center;
+}
+
+.argentina{
+    text-align:center;
+
+}
+.tokio{
+   text-align: center;
+}
+
+
+
+/* main */
+.b{
+    background-image:linear-gradient(#FA0202, #A10707,#340202);
+    color: whitesmoke;
+  }
+
+  /* primeretapa */
+  .origen{
+    
+    text-align: center;
+}
+.historia1{
+    text-align: justify
+}
+.historia2{
+    text-align: center;
+}
+
+  
+
+  
+  
+  /* 
+  .card {
+      @include media-breakpoint-only(lg) {
+        column-count: 4;
+      }
+      @include media-breakpoint-only(xl) {
+        column-count: 5;
+      }
+    } */
