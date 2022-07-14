@@ -51,7 +51,7 @@ h2{
 
 
 /* TIENDA */
-;
+
 
 .suscripcion{
    text-align: center;
@@ -120,16 +120,9 @@ th, td{
   }
 
   /* primeretapa */
-  .origen{
-    
-    text-align: center;
-}
-.historia1{
-    text-align: justify
-}
-.historia2{
-    text-align: center;
-}
+ .origenhistoria, .parte2{
+    margin: 0 auto;
+ }
 
   
 
