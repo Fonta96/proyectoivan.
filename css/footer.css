@@ -1,0 +1,6 @@
+.footer{ 
+    display:flex;
+    background-color: black;
+    color: #f40202;  
+    justify-content: center;
+    text-align:start;}

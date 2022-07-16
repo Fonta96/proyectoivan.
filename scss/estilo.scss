@@ -1,0 +1,19 @@
+
+.footer{ 
+    display:$display;
+    background-color: black;
+    color: $color; 
+    justify-content: center;
+    text-align:start;
+}
+
+$map-color:(
+    "azul":blue, "rosa":rgb(150, 27, 88)
+);
+.facebook:hover{
+    color:map-get($map-color,azul);
+}
+
+.instagram:hover{
+    color:map-get($map-color,rosa);
+}
