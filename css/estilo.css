@@ -46,8 +46,10 @@ h2{
    
 }
 
-/*primerEtapa      (va dentro de origen,  margin-left:180px;    
-    font-size: 50px;)*/
+/*primerEtapa*/
+.origen{
+    font-weight: bold;
+}      
 
 
 /* TIENDA */
@@ -64,12 +66,34 @@ h2{
  }
 
 
-
+/*tarjetas de la tienda*/
 .card:hover {
     color: black;
     box-shadow: 0 0 5px red;
-    text-shadow: 0 0 5px red;}
+    text-shadow: 0 0 5px red;
+    transform: scale(0.95);
+}
 
+.container-fluid{
+    flex-wrap: wrap;
+}
+
+.card{
+    max-width: 40vh;
+    padding: 4px;
+    border: 2px solid #0c0c0c;
+    margin: 6px;
+    box-shadow: 3px 3px 6px black;
+}
+
+.card-img, .card-img-top{
+    max-width: 50%;
+    
+}
+
+.card-title, .card-text{
+    color: black;
+}
 /*FOOTER*/
 .c{
     display: flex;
@@ -77,6 +101,7 @@ h2{
     color: #f40202;  
     justify-content: center;
     text-align:start;
+    
         
 }
 /* GIRAS */
@@ -115,7 +140,7 @@ th, td{
 
 /* main */
 .b{
-    background-image:linear-gradient(#FA0202, #A10707,#340202);
+    background-image:linear-gradient(#FA0202, #A10707,#ffd700);
     color: whitesmoke;
   }
 
@@ -123,17 +148,26 @@ th, td{
  .origenhistoria, .parte2{
     margin: 0 auto;
  }
+ .imghistoria2{
+    padding-bottom: 8px;
+ }
 
-  
+ /* segunda etapa */
+ .segundaparte{
+    text-align: center;
+    padding: 4%;
+ }
 
-  
-  
-  /* 
-  .card {
-      @include media-breakpoint-only(lg) {
-        column-count: 4;
-      }
-      @include media-breakpoint-only(xl) {
-        column-count: 5;
-      }
-    } */
+.recitalcont{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*GENERAL*/
+.p-general{
+    background-color: #00000057;
+    padding: 6px;
+    border-radius: 6px;
+    box-shadow: 3px 3px 6px black;
+    margin: 10px;
+}
