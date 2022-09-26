@@ -24,6 +24,7 @@
     new WOW().init();
   </script>
   <link rel="stylesheet" href="../css/estilo.css">
+  <script src="../js/index.js"></script>
 
 </head>
 
@@ -46,15 +47,15 @@
   </header>
 
   <main class="b">
-
     <div class=fondotienda>
+      <button onclick="limpiarCarrito()">Limpiar Carrito LS</button>
       <div class="container-fluid d-flex">
         <div class="card col-10 col-md-6 col-xl-6">
           <img src="../imagen/tienda1.jpg" class="card-img-top" alt="remera axel blanca hombre">
           <div class="card-body">
             <h5 class="card-title">Remera Axl Rose</h5>
             <p class="card-text">Remera GNR talles del S al XXL</p>
-            <a href="#" class="btn btn-primary">Añadir al carrito</a>
+            <a onclick="cargarProducto('remera1')" href="#" class="btn btn-primary">Añadir al carrito</a>
           </div>
         </div>
 
@@ -62,8 +63,8 @@
           <img src="../imagen/tienda2.jpg" class="card-img-top" alt="remera logo guns and roses negra">
           <div class="card-body">
             <h5 class="card-title">Remera GNR Negra</h5>
-            <p class="card-text">Remera GNR talles del S al XXL</p>
-            <a href="#" class="btn btn-primary">Añadir al carrito</a>
+            <p  class="card-text">Remera GNR talles del S al XXL</p>
+            <a onclick="cargarProducto('remera2')" href="#" class="btn btn-primary">Añadir al carrito</a>
           </div>
         </div>
 
@@ -72,7 +73,7 @@
           <div class="card-body">
             <h5 class="card-title">Remera GNR mujer</h5>
             <p class="card-text">Remera GNR talles del S al L</p>
-            <a href="#" class="btn btn-primary">Añadir al carrito</a>
+            <a onclick="cargarProducto('remera3')" href="#" class="btn btn-primary">Añadir al carrito</a>
           </div>
         </div>
 
@@ -81,7 +82,7 @@
           <div class="card-body">
             <h5 class="card-title">Tasa Logo GNR Negra</h5>
             <p class="card-text">Tasa Negra</p>
-            <a href="#" class="btn btn-primary">Añadir al carrito</a>
+            <a onclick="cargarProducto('tasa1')" href="#" class="btn btn-primary">Añadir al carrito</a>
           </div>
         </div>
 
@@ -90,7 +91,7 @@
           <div class="card-body">
             <h5 class="card-title">Tasa Magica GNR</h5>
             <p class="card-text">Tasa Magica Negra</p>
-            <a href="#" class="btn btn-primary">Añadir al carrito</a>
+            <a onclick="cargarProducto('tasa2')" href="#" class="btn btn-primary">Añadir al carrito</a>
           </div>
         </div>
 
@@ -99,7 +100,7 @@
           <div class="card-body">
             <h5 class="card-title">Funko Pop Axl Rose</h5>
             <p class="card-text">Funko Pop 22</p>
-            <a href="#" class="btn btn-primary">Añadir al carrito</a>
+            <a onclick="cargarProducto('funko1')" href="#" class="btn btn-primary">Añadir al carrito</a>
           </div>
         </div>
 
@@ -108,7 +109,7 @@
           <div class="card-body">
             <h5 class="card-title">Funko Pop Slash</h5>
             <p class="card-text">Funko Pop 23</p>
-            <a href="#" class="btn btn-primary">Añadir al carrito</a>
+            <a onclick="cargarProducto('funko2')" href="#" class="btn btn-primary">Añadir al carrito</a>
           </div>
         </div>
 
@@ -117,7 +118,7 @@
           <div class="card-body">
             <h5 class="card-title">Funko Pop Duff</h5>
             <p class="card-text">Funko Pop 24</p>
-            <a href="#" class="btn btn-primary">Añadir al carrito</a>
+            <a onclick="cargarProducto('funko3')" href="#" class="btn btn-primary">Añadir al carrito</a>
           </div>
         </div>
       </div>
@@ -148,6 +149,7 @@
         <button type="submit" class="btn btn-primary mb-2">Submit</button>
       </form>
     </div>
+    
   </main>
 
   <footer class="c">
