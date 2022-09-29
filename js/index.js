@@ -36,4 +36,35 @@ function cargarProducto(producto) {
     localStorage.setItem("Carrito", JSON.stringify(carritoDeCompras))    
 }
 
+//funcion carga los productos en el popup
+function CargarCheckout(){
+    document.querySelector("[name='carrito']").innerHTML=""
+    carritoDeCompras.forEach(producto => {
+        document.querySelector("[name='carrito']").innerHTML+="<div> <div style='display:inline-block'>"+producto.nombre+"</div> <div style='display:inline-block'>"+producto.precio+"</div> <div style='display:inline-block'><a onClick='deleteProduct(`"+producto.nombre+"`)'>Delete</a></div> </div>"
+    });
+}
+
+//funcion que borra el producto seleccionado
+function deleteProduct(nombreDeProducto){
+    index=null
+    carritoDeCompras.forEach(producto => {
+        if (producto.nombre==producto) {
+            index=carritoDeCompras.indexOf(producto)
+        }
+    });
+    carritoDeCompras.splice(index,1)
+    localStorage.setItem("Carrito", JSON.stringify(carritoDeCompras))  
+    CargarCheckout()
+}
+
+//calcular precio total
+
+function calcularPrecioTotal() {
+    precioTotal=0
+    carritoDeCompras.forEach(producto => {
+        precioTotal+=producto.precio
+    });
+    document.querySelector("[name='carrito']").innerHTML+="<div> <div style='display:inline-block'>Precio Total</div> <div style='display:inline-block'>"+precioTotal+"</div> <div style='display:inline-block'> </div>"
+}
+
 
