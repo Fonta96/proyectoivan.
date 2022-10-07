@@ -91,6 +91,10 @@ h2 {
     transform: scale(0.95);
 }
 
+.delete:hover{
+    cursor: pointer;
+}
+
 .container-fluid {
     flex-wrap: wrap;
 }
