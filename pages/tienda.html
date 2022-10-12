@@ -24,6 +24,7 @@
     new WOW().init();
   </script>
   <link rel="stylesheet" href="../css/estilo.css">
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="../js/index.js"></script>
 
 </head>
@@ -37,8 +38,8 @@
         aria-expanded="false">
         Menu
       </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="../index.html">Inicio</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="../index.html">Inicio</a>
         <a class="dropdown-item" href="historiaPrimerEtapa.html">PrimerEtapa</a>
         <a class="dropdown-item" href="segundaEtapa.html">Segunda etapa</a>
         <a class="dropdown-item" href="giras.html">Giras</a>
@@ -47,13 +48,14 @@
   </header>
 
   <main class="b">
-    <div class=fondotienda>
-      <button onclick="limpiarCarrito()">Limpiar Carrito LS</button>
+    <div class="fondotienda">
+      <button class="btn btn-warning ml-4 mt-2" onclick="limpiarCarrito()">Limpiar Carrito LS</button>
       <!-- Button trigger modal -->
-      <button onclick="CargarCheckout()" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+      <button onclick="CargarCheckout()" type="button" class="btn btn-primary mt-2" data-toggle="modal" data-target="#exampleModal">
         Abrir Checkout
       </button>
 
+      
       <!-- Modal -->
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">

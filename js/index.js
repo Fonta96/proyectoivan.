@@ -110,6 +110,7 @@ function CargarCheckout(){
     carritoDeCompras.forEach(producto => {
         document.querySelector("[name='carrito']").innerHTML+="<div> <div style='display:inline-block'>"+producto.nombre+"</div> <div style='display:inline-block'>"+producto.precio+"</div> <div style='display:inline-block'><a class='delete' onClick='deleteProduct(`"+producto.nombre+"`)'>Delete</a></div> </div>"
     });
+    
 }
 
 //funcion que borra el producto seleccionado
@@ -125,12 +126,27 @@ function deleteProduct(nombreDeProducto){
     CargarCheckout()
 }
 
-//calcular precio total
+//calcular precio total y SweetAlert
 
 function calcularPrecioTotal() {
     precioTotal=0
     carritoDeCompras.forEach(producto => {
         precioTotal+=producto.precio
     });
-    document.querySelector("[name='carrito']").innerHTML+="<div> <div style='display:inline-block'>Precio Total</div> <div style='display:inline-block'>"+precioTotal+"</div> <div style='display:inline-block'> </div>"
-}
+    Swal.fire({
+        title: '¿Deseas confirmar la compra?',
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Confirmar!',
+        cancelButtonText: 'Cancelar'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire(
+            `El precio total es: ${precioTotal}`
+            )
+        }
+        //document.querySelector("[name='carrito']").innerHTML+="<div> <div style='display:inline-block'>Precio Total</div> <div style='display:inline-block'>"+precioTotal+"</div> <div style='display:inline-block'> </div>"
+    })
+    }
